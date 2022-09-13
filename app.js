@@ -16,7 +16,16 @@ document.getElementById('book-form').addEventListener('submit', function (e) {
         isbn = document.getElementById('isbn').value
     // console.log(title, author, isbn)
 
+    // Instance of Book
     const book = new Book(title, author, isbn);
-    console.log(book);
+    // console.log(book);
+
+    // Instance of UI
+    const ui = new UI();
+
+
+
+
+
     e.preventDefault();
 })
