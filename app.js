@@ -9,7 +9,13 @@ function Book(title, author, isbn) {
 function UI() { }
 
 // Add Book To List
+UI.prototype.addBookList = function (book) {
+    const list = document.getElementById('book-list');
 
+    // create tr element
+    const row = document.createElement('tr');
+
+}
 
 // Event Listeners
 document.getElementById('book-form').addEventListener('submit', function (e) {
@@ -25,6 +31,8 @@ document.getElementById('book-form').addEventListener('submit', function (e) {
 
     // Instance of UI
     const ui = new UI();
+
+    console.log(ui);
 
     // Add book to list
     ui.addBookList(book);
