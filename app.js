@@ -52,6 +52,13 @@ UI.prototype.showAlert = function (message, className) {
     }, 3000);
 }
 
+// Delete Book
+UI.prototype.deleteBook(target){
+    if () {
+
+    }
+}
+
 // Event Listeners
 document.getElementById('book-form').addEventListener('submit', function (e) {
 
@@ -76,6 +83,9 @@ document.getElementById('book-form').addEventListener('submit', function (e) {
 
         // Add book to list
         ui.addBookList(book);
+
+        // Delete book
+        ui.deleteBook(e.target);
 
         // Show success
         ui.showAlert('Book Added!', 'success')
